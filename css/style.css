@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*********************************************
+TAG
+**********************************************/
+
+nav{
+    background-color: rgb(86, 149, 250);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul{
+    display: inline-block;
+}
+
+li{
+    display: inline-block;
+    list-style: none;
+    color: white;
+    margin-right: 10px;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+
+
+/*********************************************
+CLASS
+**********************************************/
+
+.menu-desktop{
+    display: none;
+}
+
+.menu-desktop li a{
+    text-decoration: none;
+    color: white;
+}
+
+.img-phone{
+    width: 60%;
+   
+}
+
+/*********************************************
+CARD
+**********************************************/
+
+.card-1{
+    width: 80%;
+    background-color: rgb(174, 198, 237);
+    border-radius: 10px;
+}
+
+.card-2{
+    width: 80%;
+    background-color: rgb(174, 198, 237);
+    border-radius: 10px;
+}
+
+.card-3{
+    width: 80%;
+    background-color: rgb(174, 198, 237);
+    border-radius: 10px;
+}
+
+.card-4{
+    width: 80%;
+    background-color: rgb(174, 198, 237);
+    border-radius: 10px;
+}
+
+.card-5{
+    width: 80%;
+    background-color: rgb(174, 198, 237);
+    border-radius: 10px;
+}
+
+
+
+/*********************************************
+BUTTON-ICON
+**********************************************/
+
+.menu .fa-bars{
+    color: white;
+}
+
+.button-nav{
+    display: none;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px 5px;
+}
+
+.button-nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.button-app-store{
+    background-color: rgb(86, 149, 250);
+    border-radius: 20px;
+    padding: 5px 5px; 
+    width: 60%;
+}
+
+.button-app-store a{
+    text-decoration: none;
+    color: white;
+}
+
+.fa-file-code, .fa-compass-drafting{
+    font-size: 100px;
+}
+
+.fa-laptop-code{
+    font-size: 100px;
+}
+
+.fa-bullhorn{
+    font-size: 100px;
+}
+
+
+/*********************************************
+MEDIA-QUERY
+**********************************************/
+
+/* Desktop */
+@media screen and (min-width: 769px){
+
+    nav{
+        position: fixed;
+        left: 0;
+        right: 0;
+    }
+
+    main{
+        padding-top: 50px;
+        display: flex;
+    }
+    .menu .fa-bars{
+        display: none;
+    }
+
+    .menu-desktop{
+        display: inline-block;
+    }
+
+    .button-nav{
+        display: inline-block;
+    }
+
+    section{
+        width: 70%;
+        margin: auto;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 700px){
+
+
+    section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        /* align-items: stretch; */
+    }
+
+    .container-card-1{
+        width: 60%;
+        margin: auto;
+    }
+
+    .container-card-2{
+        width: 35%;
+        margin: 0 auto;
+    }
+
+    .container-card-3, .container-card-4, .container-card-5{
+        display: flex;
+        justify-content: space-between;
+        width: 30%;
+        margin-bottom: 50px;
+    }
+    .container-card-1 .card-1{
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .card-2{
+        width: 100%;
+        height: 95%;
+    }
+
+    .card-3{
+        width: 100%;
+    }
+
+    .card-4{
+        width: 100%;
+    }
+
+    .card-5{
+        width: 100%;
+    }
+
+    .button-app-store{
+        width: 30%;
+        margin-left: 30px;
+    }
+
+}
+
+/*********************************************
+LIBRERIA PERSONALE
+**********************************************/
+
+.fixed{
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+.flex{
+    display: flex;
+}
+
+.js-center{
+    justify-content: center;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.space-around{
+    justify-content: space-around;
+}
+
+.al-it-center{
+    align-items: center;
+}
+
+.al-it-start{
+    align-items: flex-start;
+}
+
+.flex-basis{
+    flex-basis: auto;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.wrap{
+    flex-wrap: wrap ;
+}
+.margin-auto{
+    margin: auto;
+}
+
+.margin-10-20{
+    margin: 10px 20px;
+}
+.mt-10{
+    margin-top: 10px;
+}
+
+.mt-30{
+    margin-top: 30px;
+}
+
+.mt-50{
+    margin-top: 50px;
+}
+
+.mt-100{
+    margin-top: 100px;
+}
+
+.mb-10{
+    margin-bottom: 10px;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
+
+.mb-40{
+    margin-bottom: 40px;
+}
+
+.ml-10{
+    margin-left: 10px;
+}
+
+.ml-30{
+    margin-left: 30px;
+}
+
+.mr-10{
+    margin-right: 10px;
+}
+
+.mr-30{
+    margin-right: 30px;
+}
+.fs-20{
+    font-size: 20px;
+}
+
+.fs-22{
+    font-size: 22px;
+}
+
+.fs-30{
+    font-size: 30px;
+}
+
+.color-blue{
+    color: rgb(33, 79, 247);
+}
+
+.pt-10{
+    padding-top: 10px;
+}
+
+.pt-20{
+    padding-top: 20px;
+}
+
+.pb-10{
+    padding-bottom: 10px;
+}
+
+.pb-20{
+    padding-bottom: 20px;
+}
+
+.pb-100{
+    padding-bottom: 100px;
+}
+
+.padding-top-50{
+    padding-top: 50px;
+}
+
+.pt-100{
+    padding-top: 100px;
+}
+
+.ta-center{
+    text-align: center;
+}
+
+.ta-left{
+    text-align: left;
+}
+
+.border{
+    border: 1px solid gray;
+}
+
+.in-block{
+    display: inline-block;
+}
+
+.overflow{
+    overflow: auto;
+}
+
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+}
