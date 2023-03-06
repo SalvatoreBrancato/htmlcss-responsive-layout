@@ -51,6 +51,21 @@ CLASS
    
 }
 
+.section-2{
+    background-color: rgb(167, 76, 242);
+    padding-bottom: 30px;
+}
+
+.container-section-2{
+    width: 80%;
+    border-radius: 20px;
+    margin: 20px auto;
+    display: flex;    
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
 /*********************************************
 CARD
 **********************************************/
@@ -119,6 +134,18 @@ BUTTON-ICON
     color: white;
 }
 
+.button-download{
+    border-radius: 50%;
+    background-color: rgb(196, 100, 248);
+    width: 30px;
+    height: 30px;
+    padding: 20px 20px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .fa-file-code, .fa-compass-drafting{
     font-size: 100px;
 }
@@ -147,7 +174,6 @@ MEDIA-QUERY
 
     main{
         padding-top: 50px;
-        display: flex;
     }
     .menu .fa-bars{
         display: none;
@@ -161,9 +187,27 @@ MEDIA-QUERY
         display: inline-block;
     }
 
-    section{
+    .section-1{
         width: 70%;
         margin: auto;
+    }
+
+    .section-2{
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: wrap;
+    }
+
+    .width-40{
+        width: 40%;
+    }
+    
+    .width-50{
+        width: 50%;
+    }
+    
+    .width-55{
+        width: 55%;
     }
 }
 
@@ -171,7 +215,7 @@ MEDIA-QUERY
 @media screen and (min-width: 700px){
 
 
-    section{
+    .section-1{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -221,11 +265,22 @@ MEDIA-QUERY
         margin-left: 30px;
     }
 
+    .section-2 div h3{
+        font-size: 60px;
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .container-section-2 p{
+        text-align: center;
+    }
 }
 
 /*********************************************
 LIBRERIA PERSONALE
 **********************************************/
+
+
 
 .fixed{
     position: fixed;
@@ -330,6 +385,15 @@ LIBRERIA PERSONALE
 
 .color-blue{
     color: rgb(33, 79, 247);
+}
+
+.color-wh{
+    color: white;
+}
+
+
+.bgc-white{
+    background-color: white;
 }
 
 .pt-10{
