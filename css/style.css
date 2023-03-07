@@ -69,10 +69,27 @@ CLASS
 
 .img-testimonial img{
     border-radius: 50%;
-    width: 100px;
+    width: 150px;
     aspect-ratio: 1;
     object-fit: cover;
+    margin: 10px auto;
     
+}
+
+.section-4{
+    background-color: rgb(149,147,230) ;
+}
+
+.img-about-us img{
+    border-radius: 50%;
+    width: 150px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    margin-left: 20px;
+}
+
+.section-6{
+    background-color: rgb(149,147,230);
 }
 
 /*********************************************
@@ -113,6 +130,14 @@ CARD
     background-color: rgb(149,147,230);
     width: 80%;
     border-radius: 30px;
+    margin: 30px auto;
+}
+
+.card-benefits{
+    background-color: white;
+    width: 80%;
+
+    border-radius: 20px;
 }
 
 
@@ -160,6 +185,38 @@ BUTTON-ICON
     align-items: center;
 }
 
+.button-more{
+    width: 30%;
+    padding: 10px 10px;
+    background-color: rgb(149,147,230);
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.button-linkedin{
+    width: 40%;
+    padding: 5px 5px;
+    background-color: rgb(149,147,230);
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 20px;
+    font-size: 12px;
+    color: white;
+}
+
+.button-get-started{
+    width: 30%;
+    padding: 5px 5px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 20px;
+    font-size: 12px;
+    color: rgb(149,147,230);
+    margin: auto;
+}
+
 .fa-file-code, .fa-compass-drafting{
     font-size: 100px;
 }
@@ -177,6 +234,91 @@ BUTTON-ICON
 MEDIA-QUERY
 **********************************************/
 
+/* Tablet */
+@media screen and (min-width: 600px){
+
+
+    .section-1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .container-card-1{
+        width: 63%;
+        margin: auto;
+    }
+    .card-1 .img-phone{
+        margin-left: 0;
+    }
+    .container-card-2{
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    .container-card-3, .container-card-4, .container-card-5{
+        display: flex;
+        justify-content: space-between;
+        width: 30%;
+        margin-bottom: 50px;
+    }
+    .container-card-1 .card-1{
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .card-2{
+        width: 100%;
+        height: 95%;
+    }
+
+    .card-3{
+        width: 100%;
+    }
+
+    .card-4{
+        width: 100%;
+    }
+
+    .card-5{
+        width: 100%;
+    }
+
+    .card-1 div .button-app-store{
+        width: 30%;
+        margin-left: 30px;
+    }
+
+    .section-2 div h3{
+        font-size: 60px;
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .container-section-2 p{
+        text-align: center;
+    }
+
+    .card-testimonial{
+        display: flex;
+
+        align-items: center;
+    }
+
+    .container-benefits{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card-benefits{
+        width: 40%;
+    }
+
+    .section-5{
+        display: flex;
+    }
+}
+
 /* Desktop */
 @media screen and (min-width: 900px){
 
@@ -184,6 +326,7 @@ MEDIA-QUERY
         position: fixed;
         left: 0;
         right: 0;
+        top: 0;
     }
 
     main{
@@ -231,6 +374,7 @@ MEDIA-QUERY
         flex-wrap: wrap;
     }
 
+
     .width-30{
         width: 30%;
     }
@@ -242,73 +386,24 @@ MEDIA-QUERY
     .width-55{
         width: 55%;
     }
-}
 
-/* Tablet */
-@media screen and (min-width: 700px){
-
-
-    .section-1{
+    .container-benefits{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        
     }
 
-    .container-card-1{
-        width: 60%;
+    .card-benefits{
+        width: 30%;
+    }
+
+    .section-5{
+        width: 70%;
         margin: auto;
     }
-    .card-1 .img-phone{
-        margin-left: 0;
-    }
-    .container-card-2{
-        width: 35%;
-        margin: 0 auto;
-    }
-
-    .container-card-3, .container-card-4, .container-card-5{
-        display: flex;
-        justify-content: space-between;
-        width: 30%;
-        margin-bottom: 50px;
-    }
-    .container-card-1 .card-1{
-        width: 100%;
-        align-items: flex-start;
-    }
-
-    .card-2{
-        width: 100%;
-        height: 95%;
-    }
-
-    .card-3{
-        width: 100%;
-    }
-
-    .card-4{
-        width: 100%;
-    }
-
-    .card-5{
-        width: 100%;
-    }
-
-    .card-1 div .button-app-store{
-        width: 30%;
-        margin-left: 30px;
-    }
-
-    .section-2 div h3{
-        font-size: 60px;
-        text-align: left;
-        margin-left: 20px;
-    }
-
-    .container-section-2 p{
-        text-align: center;
-    }
 }
+
+
 
 /*********************************************
 LIBRERIA PERSONALE
@@ -320,6 +415,7 @@ LIBRERIA PERSONALE
     position: fixed;
     left: 0;
     right: 0;
+    top: 0;
 }
 .flex{
     display: flex;
@@ -417,6 +513,10 @@ LIBRERIA PERSONALE
     font-size: 30px;
 }
 
+.fs-100{
+    font-size: 100px;
+}
+
 .color-blue{
     color: rgb(33, 79, 247);
 }
@@ -429,6 +529,9 @@ LIBRERIA PERSONALE
     color: white;
 }
 
+.color-yellow{
+    color: yellow;
+}
 
 .bgc-white{
     background-color: white;
